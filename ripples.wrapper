@@ -7,7 +7,7 @@ elif [ "$SNAP_ARCH" == "armhf" ]; then
 else
     ARCH="$SNAP_ARCH-linux-gnu"
 fi
-cd $SNAP
+#cd $SNAP
 
 export LD_LIBRARY_PATH="$SNAP/usr/lib/x86_64-linux-gnu/alsa-lib:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="$SNAP/usr/lib/x86_64-linux-gnu/dri:$LD_LIBRARY_PATH"
@@ -15,5 +15,5 @@ export LIBGL_DRIVERS_PATH=$SNAP/usr/lib/x86_64-linux-gnu/dri
 
 echo "LIB PATH: $LD_LIBRARY_PATH"
 
-exec ripples
+exec $SNAP/ripples
 
