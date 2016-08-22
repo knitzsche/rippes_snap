@@ -1,8 +1,8 @@
 name: ripples 
-version: "0.3.5"
+version: "0.3.6"
 summary: Ripples game
 description: Make ripples by touching and clicking
-confinement: strict
+confinement: strict 
 
 apps:
   ripples:
@@ -27,6 +27,8 @@ parts:
       - libsdl2-gfx-1.0-0
       - libdrm2
       - libegl1-mesa
+      - libgles2-mesa
+      - libgl1-mesa-glx
   environment:
     plugin: copy
     files:
