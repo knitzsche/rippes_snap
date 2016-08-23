@@ -1,5 +1,5 @@
 name: ripples 
-version: "0.3.6"
+version: "0.3.7"
 summary: Ripples game
 description: Make ripples by touching and clicking
 confinement: strict 
